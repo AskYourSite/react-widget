@@ -1,5 +1,5 @@
 {
-  "name": "@askmysite/react-widget",
+  "name": "@askyoursite/react-widget",
   "version": "1.0.0",
   "description": "Lightweight React widget for AskMySite chatbot integration",
   "main": "dist/index.js",
