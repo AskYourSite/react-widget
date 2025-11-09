@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AskMySite Widget Demo</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+      color: #333;
+      margin-top: 0;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+    }
+    .code-block {
+      background: #f4f4f4;
+      padding: 16px;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🤖 AskMySite Widget Demo</h1>
+    <p>This is a demo page showing how the AskMySite widget integrates into any website.</p>
+    
+    <h2>How to Use</h2>
+    <p>Simply add this one line to your React app:</p>
+    <div class="code-block">
+      &lt;AskMySite apiKey="your-api-key" /&gt;
+    </div>
+    
+    <h2>Features</h2>
+    <ul>
+      <li>💬 Real-time ChatGPT-powered responses</li>
+      <li>🎨 Customizable colors and positioning</li>
+      <li>📱 Fully responsive design</li>
+      <li>⚡ Lightweight and fast</li>
+      <li>🔒 Secure API key authentication</li>
+    </ul>
+    
+    <p><strong>Look for the chat button in the bottom-right corner! →</strong></p>
+  </div>
+
+  <!-- AskMySite Widget Integration -->
+  <div id="askmysite-root"></div>
+  
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  
+  <!-- Note: In production, you would import your built package here -->
+  <script>
+    // Demo: This would normally be your built widget
+    console.log('AskMySite widget would be loaded here with: <AskMySite apiKey="demo-key" />');
+  </script>
+</body>
+</html>

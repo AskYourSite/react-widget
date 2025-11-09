@@ -1,0 +1,306 @@
+.askmysite-container {
+  position: fixed;
+  z-index: 999999;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.askmysite-position-bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+.askmysite-position-bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.askmysite-position-top-right {
+  top: 20px;
+  right: 20px;
+}
+
+.askmysite-position-top-left {
+  top: 20px;
+  left: 20px;
+}
+
+/* Chat Button */
+.askmysite-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.askmysite-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.askmysite-button:active {
+  transform: scale(0.95);
+}
+
+/* Chat Window */
+.askmysite-chat-window {
+  width: 380px;
+  height: 600px;
+  max-height: calc(100vh - 100px);
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+.askmysite-header {
+  padding: 16px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.askmysite-header-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.askmysite-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.askmysite-header-text h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.askmysite-status {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.askmysite-close-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.askmysite-close-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Messages */
+.askmysite-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #f8f9fa;
+}
+
+.askmysite-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.askmysite-messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.askmysite-messages::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 3px;
+}
+
+.askmysite-message {
+  display: flex;
+  gap: 8px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.askmysite-message-user {
+  justify-content: flex-end;
+}
+
+.askmysite-message-assistant {
+  justify-content: flex-start;
+}
+
+.askmysite-message-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.askmysite-message-bubble {
+  max-width: 75%;
+  padding: 12px 16px;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.askmysite-message-user .askmysite-message-bubble {
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.askmysite-message-assistant .askmysite-message-bubble {
+  background-color: white;
+  color: #333;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Typing Indicator */
+.askmysite-typing-indicator {
+  display: flex;
+  gap: 4px;
+  padding: 12px 16px;
+  background-color: white;
+  border-radius: 16px;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.askmysite-typing-indicator span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #cbd5e0;
+  animation: typing 1.4s infinite;
+}
+
+.askmysite-typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.askmysite-typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  30% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+/* Input Container */
+.askmysite-input-container {
+  padding: 16px;
+  background: white;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.askmysite-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.askmysite-input:focus {
+  border-color: #cbd5e0;
+}
+
+.askmysite-input:disabled {
+  background-color: #f8f9fa;
+  cursor: not-allowed;
+}
+
+.askmysite-send-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+.askmysite-send-button:hover:not(:disabled) {
+  background-color: #f8f9fa;
+}
+
+.askmysite-send-button:active:not(:disabled) {
+  background-color: #e2e8f0;
+}
+
+.askmysite-send-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .askmysite-chat-window {
+    width: calc(100vw - 40px);
+    height: calc(100vh - 100px);
+  }
+}
