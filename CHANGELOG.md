@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 - Initial release of AskMySite React Widget
+- Full React 16.8+, 17, 18, and 19 support
 - Core chat widget component with floating button
 - API integration for fetching chatbot configuration
 - Real-time chat messaging with ChatGPT backend
@@ -30,6 +31,7 @@ All notable changes to this project will be documented in this file.
 
 ### Technical
 - Built with React 18 and TypeScript
+- Compatible with React 16.8+ (Hooks), React 17, 18, and 19
 - Rollup bundler for optimal package size
 - CSS injection for zero-config styling
 - ESM and CommonJS output formats

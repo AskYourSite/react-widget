@@ -156,7 +156,7 @@ Defines:
 - Version: 1.0.0
 - Entry points: CJS, ESM, TypeScript
 - Build scripts: build, dev, prepublishOnly
-- Peer dependencies: React 16.8+, 17, 18
+- Peer dependencies: React 16.8+, 17, 18, 19
 - Dev dependencies: TypeScript, Rollup, plugins
 
 **Key Scripts:**

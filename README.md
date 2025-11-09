@@ -54,6 +54,20 @@ That's it! The chatbot will appear in the bottom-right corner of your website.
 - **Customizable**: Match your brand colors and positioning
 - **Real-time**: Powered by ChatGPT for intelligent responses
 - **Easy Integration**: Single component, no complex setup
+- **React 16.8+ Compatible**: Works with React 16.8 (Hooks), 17, 18, and 19
+
+## 🔧 Compatibility
+
+Compatible with modern React frameworks:
+- ✅ React 16.8+ (Hooks required)
+- ✅ React 17
+- ✅ React 18
+- ✅ React 19
+- ✅ Next.js (all versions including 15+)
+- ✅ Remix
+- ✅ Gatsby
+- ✅ Create React App
+- ✅ Vite + React
 
 ## 🔑 Getting Your API Key
 

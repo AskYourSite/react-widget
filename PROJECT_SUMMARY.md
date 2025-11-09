@@ -143,7 +143,7 @@ npm run prepublishOnly  # Pre-publish build
 - **Version**: 1.0.0
 - **Size**: ~15KB minified (excluding React)
 - **Dependencies**: 0 runtime dependencies
-- **Peer Dependencies**: React ^16.8+ || ^17.0+ || ^18.0+
+- **Peer Dependencies**: React ^16.8+ || ^17.0+ || ^18.0+ || ^19.0+
 
 ---
 

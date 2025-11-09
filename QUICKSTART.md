@@ -2,6 +2,12 @@
 
 Get your AskMySite chatbot running on your website in 5 minutes!
 
+## ✅ Requirements
+
+- React 16.8+ (Hooks support required)
+- Works with React 17, 18, and 19
+- Compatible with Next.js 13-15+, Remix, Gatsby, Vite, CRA
+
 ## Step 1: Install the Package
 
 ```bash
